@@ -40,8 +40,8 @@ export default class Queue<T> {
 
         head.next = undefined;
 
-        if (!this.head) {
-            this.tail = undefined;
+        if (!this.length) {
+            this.head = this.tail = undefined;
         }
 
         return head.value;
